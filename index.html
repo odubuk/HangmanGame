@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="hangman.css">
+    <script src="hangman.js"></script>
+    <script src="jquery.js"></script>
 </head>
 <body>
     <center><h1>Hangman</h1></center><br>
-    <label><div id = "nameInput" align ="right">Enter your name: <input class="name" type="text" value=""/></div></label><br><br><br>
+    <label><div id = "nameinput" align ="right">Enter your name: <span id="playername"></span><input class="name" type="text" value=""/></div></label><br><br><br>
     <p id="chosenword"></p>
     <center><input type=text id="letterGuess" size="5" maxlength="1"><input type=submit id="submit" value="Guess"></center><br>
     <center>Username: <div id="username"></div></center>
     <center>Incorrect Letters:</center>
     <center>Remaining Guesses:</center>
-    <script src="hangman.js"></script>
 </body>
 </html>
