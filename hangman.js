@@ -1,6 +1,7 @@
 var words = [
     "blowtorch", "night", "gossip", "acrobatic", "blueberry", "strange", "slippery", "believe", "content", "javascript", "jquery", "honesty", "fortunate", "fraudulent", "demolition", "establishment", "crazy", "graffiti", "love", "foreign", "flags", "lightning", "thunder", "rain", "donation", "extravagant", "present", "halloween", "mohawk", "culture", "experiment", "peppermint", "chocolate", "coding", "python", "html"]
 
+//THIS REQUEST THAT THE USER IN PUT A NAME & PRINTS THAT NAME TO THE PAGE (VIA JAVASCRIPT)
 /*
 function checkUser(){
     if (playerName === ""){
@@ -16,6 +17,11 @@ checkUser();
 
 var printUserName = document.getElementById("username").innerHTML = playerName;
 */
+
+$(() => {
+    $('#nameinput').append('#playername');
+});
+
 
 var randomWord = words[Math.floor(Math.random() * words.length)];
 console.log('The random word is "' + randomWord + '".');
