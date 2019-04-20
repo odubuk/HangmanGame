@@ -1,8 +1,9 @@
 var words = [
     "blowtorch", "night", "gossip", "acrobatic", "blueberry", "strange", "slippery", "believe", "content", "javascript", "jquery", "honesty", "fortunate", "fraudulent", "demolition", "establishment", "crazy", "graffiti", "love", "foreign", "flags", "lightning", "thunder", "rain", "donation", "extravagant", "present", "halloween", "mohawk", "culture", "experiment", "peppermint", "chocolate", "coding", "python", "html"]
 
-//THIS REQUEST THAT THE USER IN PUT A NAME & PRINTS THAT NAME TO THE PAGE (VIA JAVASCRIPT)
 /*
+//THIS REQUEST THAT THE USER IN PUT A NAME & PRINTS THAT NAME TO THE PAGE (VIA JAVASCRIPT)
+
 function checkUser(){
     if (playerName === ""){
         playerName = "Player"
@@ -18,11 +19,6 @@ checkUser();
 var printUserName = document.getElementById("username").innerHTML = playerName;
 */
 
-$(() => {
-    $('#nameinput').append('#playername');
-});
-
-
 var randomWord = words[Math.floor(Math.random() * words.length)];
 console.log('The random word is "' + randomWord + '".');
 
@@ -32,6 +28,10 @@ function guessWord(){
         return randomWord[i];
     }
 }
+
+$( ".playername" ).change(function() {
+  alert( "Handler for .change() called." );
+});
 
 var guessField = document.getElementById("chosenword");
 guessWord();
