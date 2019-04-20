@@ -29,9 +29,5 @@ function guessWord(){
     }
 }
 
-$( ".playername" ).change(function() {
-  alert( "Handler for .change() called." );
-});
-
 var guessField = document.getElementById("chosenword");
 guessWord();
